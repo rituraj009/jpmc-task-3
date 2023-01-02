@@ -30,7 +30,7 @@ class Graph extends Component<IProps, {}> {
             timestamp: 'date',
             upper_bound: 'float',
             lower_bound: 'float',
-            trigger_alert: 'float'
+            trigger_alert: 'float',
         };
 
         if (window.perspective && window.perspective.worker()) {
@@ -49,7 +49,7 @@ class Graph extends Component<IProps, {}> {
                 timestamp: 'distinct count',
                 upper_bound: 'avg',
                 lower_bound: 'avg',
-                trigger_alert: 'avg'
+                trigger_alert: 'avg',
             }));
         }
     }
